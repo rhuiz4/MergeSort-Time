@@ -30,35 +30,34 @@ public class MergeSort {
      ******************************************************/
     private static int[] merge( int[] a, int[] b ) 
     {
-	int[] ans = new int[a.length + b.length];
-	//System.out.println(ans.length);
-	int counter = 0;
+	int[] arr = new int[a.length+b.length];
 	int counterA = 0;
 	int counterB = 0;
-	while (counter != ans.length){//uses all numbers
-	    if (counterA == a.length){//if all of int[] a is used
-		ans[counter] = b[counterB];
-		counterB += 1;
-	    }
-	    else if (counterB == b.length){//if all of int[] b is used
-		ans[counter] = a[counterA];
-		counterA += 1;
-	    }
-	    else{//if neither is used
-		if (a[counterA] < b[counterB]){//if a[counterA] is the smaller number
-		    ans[counter] = a[counterA];
-		    counterA += 1;
-		}
-		else{//if b[counterB] is the smaller number
-		    ans[counter] = b[counterB];
-		    counterB += 1;
+	int counterArr = 0;
+	
+	while ( counterArr != arr.length ) {
+	    if (counterB < b.length) {
+		if (
+		    counterA == a.length
+		    || a[counterA] > b[counterB]
+		    || a[counterA] == b[counterB]) {
+		    arr[counterArr] = b[counterB];
+		    counterB++;
+		    counterArr++;
 		}
 	    }
-	    counter += 1;
-	    //System.out.println(counterA + " _ " + a.length);
-	    //printArray(ans);
+		
+	    if (counterA < a.length) {
+		if (counterB == b.length
+		    || a[counterA] < b[counterB] ) {
+		    arr[counterArr] = a[counterA];
+		    counterA ++;
+		    counterArr++;
+		}
+	    }
 	}
-	return ans;
+	
+	return arr;
     }//end merge()
 
 
