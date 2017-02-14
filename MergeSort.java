@@ -28,7 +28,7 @@ public class MergeSort {
      * Postcond: Input arrays unchanged, and 
      * output array sorted in ascending order.
      ******************************************************/
-    private static int[] merge( int[] a, int[] b ) 
+    private int[] merge( int[] a, int[] b ) 
     {
 	int[] arr = new int[a.length+b.length];
 	int counterA = 0;
@@ -66,7 +66,7 @@ public class MergeSort {
      * Sorts input array using mergesort algorithm
      * Returns sorted version of input array (ascending)
      ******************************************************/
-    public static int[] sort( int[] arr ) 
+    public int[] sort( int[] arr ) 
     {
 	if (arr.length == 1){
 	    return arr;
@@ -92,13 +92,13 @@ public class MergeSort {
     //-------------------HELPERS-------------------------
     //tester function for exploring how arrays are passed
     //usage: print array, mess(array), print array. Whaddayasee?
-    public static void mess( int[] a ) {
+    public void mess( int[] a ) {
 	for( int i = 0 ; i<a.length; i++ )
 	    a[i] = 0;
     }
 
     //helper method for displaying an array
-    public static void printArray( int[] a ) {
+    public void printArray( int[] a ) {
 	System.out.print("[");
 	for( int i : a )
 	    System.out.print( i + ",");
@@ -106,7 +106,7 @@ public class MergeSort {
     }
     //---------------------------------------------------
 
-
+    /*
     //main method for testing
     public static void main( String [] args ) {
 
@@ -132,15 +132,13 @@ public class MergeSort {
 	//*
 	System.out.println("\nMerging arr4 and arr6: ");
 	printArray( merge(arr4,arr6) );
-	//*
-	*/
 	System.out.println("\nSorting arr4-7...");
 	printArray( sort( arr4 ) );
 	printArray( sort( arr5 ) );
 	printArray( sort( arr6 ) );
 	printArray( sort( arr7 ) );
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+        
     }//end main()
-
+    */
 }//end class MergeSort
 
