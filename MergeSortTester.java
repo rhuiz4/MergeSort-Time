@@ -7,7 +7,7 @@
   class MergeSortTester
   ALGORITHM:
   <INSERT YOUR DISTILLATION OF ALGO HERE> 
-  
+  Make integer arrays containing different numbers of elements and find the runtime in nanoseconds it takes to sort these arrays with MergeSort.
   
   BIG-OH CLASSIFICATION OF ALGORITHM:
   <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
