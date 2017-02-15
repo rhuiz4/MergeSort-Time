@@ -1,12 +1,13 @@
+//Team Last -- Rihui Zheng, Henry Zheng, Queenie Xiang
+//APCS pd3
+//HW07 -- What Does the Data Say?
+//2017-02-15
+
 /*======================================
   class MergeSortTester
-
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
-  Compare the time of runtime for MergeSort to runtime of other sorts
-  (ex: BubbleSort, InsertionSort, SelectionSort).
-  Compare the swap runtime to runtime of pass of MergeSort
-  (i.e. merge and sort)
+  <INSERT YOUR DISTILLATION OF ALGO HERE> 
+  
   
   BIG-OH CLASSIFICATION OF ALGORITHM:
   <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
@@ -14,7 +15,7 @@
   
   Mean execution times for dataset of size n:
   Batch size: <1000>
-  n=1       time: 
+  n=1       time:
   n=10      time: 
   n=100     time: 
   ...
@@ -67,12 +68,12 @@ public class MergeSortTester
 	    arr5[i] = (int)(Math.random()*1000);
 	}
 
-	/*
+	
 	int[] arr6 = new int[1000000];
 	for(int i = 0;i < 1000000; i++){
 	    arr6[i] = (int)(Math.random()*1000);
 	}
-	*/
+	
 	
 	System.out.println("Merge Sort:");
 	long average = 0;
@@ -123,7 +124,7 @@ public class MergeSortTester
 	    //System.out.println(elapsed);
 	    }
 	average = average / 1000;
-	System.out.println("1,000 elements: \t\t" + average);
+	System.out.println("1,000 elements: \t" + average);
 
 	average = 0;
 	for (int x = 0; x < 1000; x++){
@@ -135,7 +136,7 @@ public class MergeSortTester
 	    //System.out.println(elapsed);
 	    }
 	average = average / 1000;
-	System.out.println("10,000 elements: \t\t" + average);
+	System.out.println("10,000 elements: \t" + average);
 
 	average = 0;
 	for (int x = 0; x < 1000; x++){
@@ -147,9 +148,9 @@ public class MergeSortTester
 	    //System.out.println(elapsed);
 	    }
 	average = average / 1000;
-	System.out.println("100,000 elements: \t\t" + average);
+	System.out.println("100,000 elements: \t" + average);
 
-	/*
+	
 	average = 0;
 	for (int x = 0; x < 1000; x++){
 	    long start = System.nanoTime();
@@ -160,8 +161,8 @@ public class MergeSortTester
 	    //System.out.println(elapsed);
 	    }
 	average = average / 1000;
-	System.out.println("1,000,000 elements: \t\t" + average);
-	*/
+	System.out.println("1,000,000 elements: \t" + average);
+	
 	
     }//end main
 
