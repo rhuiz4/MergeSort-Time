@@ -1,10 +1,3 @@
-/*
-Henry Zheng
-APCS2 pd3
-HW06 -- Step 1: Split, Step 2: ?, Step 3: Sorted!
-2017-02-13
-*/
-
 /*======================================
   class MergeSort
   Implements mergesort on array of ints.
@@ -106,39 +99,6 @@ public class MergeSort {
     }
     //---------------------------------------------------
 
-    /*
-    //main method for testing
-    public static void main( String [] args ) {
 
-	//*~~~~~~~~~~~~~~ Ye Olde Tester Bar ~~~~~~~~~~~~~~
-	int[] arr0 = {0};
-	int[] arr1 = {1};
-	int[] arr2 = {1,2};
-	int[] arr3 = {3,4};
-	int[] arr4 = {1,2,3,4};
-	int[] arr5 = {4,3,2,1};
-	int[] arr6 = {9,42,17,63,0,512,23};
-	int[] arr7 = {9,42,17,63,0,9,512,23,9};
-	/*
-	System.out.println("\nTesting mess-with-array method...");
-	printArray( arr3 );
-	mess(arr3);
-	printArray( arr3 );
-	
-	printArray( merge(arr0,arr2));
-	
-	System.out.println("\nMerging arr1 and arr0: ");
-	printArray( merge(arr1,arr0) );
-	//*
-	System.out.println("\nMerging arr4 and arr6: ");
-	printArray( merge(arr4,arr6) );
-	System.out.println("\nSorting arr4-7...");
-	printArray( sort( arr4 ) );
-	printArray( sort( arr5 ) );
-	printArray( sort( arr6 ) );
-	printArray( sort( arr7 ) );
-        
-    }//end main()
-    */
 }//end class MergeSort
 
