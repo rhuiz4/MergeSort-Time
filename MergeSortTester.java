@@ -36,20 +36,46 @@ public class MergeSortTester
     public static void main( String[] args ) 
     {
 	MergeSort bob = new MergeSort();
-	int[] arr0 = {0};
-	int[] arr1 = {1};
-	int[] arr2 = {1,2};
-	int[] arr3 = {3,4};
-	int[] arr4 = {1,2,3,4};
-	int[] arr5 = {4,3,2,1};
-	int[] arr6 = {9,42,17,63,0,512,23};
-	int[] arr7 = {9,42,17,63,0,9,512,23,9};
-	for (int x = 0; x < 1000; x++){
+
+	int[] arr0 = new int[10];
+	for(int i = 0;i < 10; i++){
+	    arr0[i] = (int)(Math.random()*1000);
+	}
+
+	int[] arr1 = new int[100];
+	for(int i = 0;i < 100; i++){
+	    arr1[i] = (int)(Math.random()*1000);
+	}
+
+	int[] arr2 = new int[1000];
+	for(int i = 0;i < 1000; i++){
+	    arr2[i] = (int)(Math.random()*1000);
+	}
+	System.out.println("Merge Sort:");
+	System.out.println("\t10 element array:");
+	for (int x = 0; x < 10; x++){
+	    long start = System.nanoTime();
+	    bob.sort(arr0);
+	    long end = System.nanoTime();
+	    long elapsed = end - start;
+	    System.out.println("\t\t" + elapsed);
+	    }
+	System.out.println("\t100 element array:");
+	for (int x = 0; x < 10; x++){
+	    long start = System.nanoTime();
+	    bob.sort(arr1);
+	    long end = System.nanoTime();
+	    long elapsed = end - start;
+	    System.out.println("\t\t" + elapsed);
+	    }
+	System.out.println("\t1000 element array:");
+	for (int x = 0; x < 10; x++){
 	    long start = System.nanoTime();
 	    bob.sort(arr2);
 	    long end = System.nanoTime();
-	    System.out.println(end-start);
-	}
+	    long elapsed = end - start;
+	    System.out.println("\t\t" + elapsed);
+	    }
     }//end main
 
 }//end class
