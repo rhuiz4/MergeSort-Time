@@ -67,10 +67,12 @@ public class MergeSortTester
 	    arr5[i] = (int)(Math.random()*1000);
 	}
 
+	/*
 	int[] arr6 = new int[1000000];
 	for(int i = 0;i < 1000000; i++){
 	    arr6[i] = (int)(Math.random()*1000);
 	}
+	*/
 	
 	System.out.println("Merge Sort:");
 	long average = 0;
@@ -147,6 +149,7 @@ public class MergeSortTester
 	average = average / 1000;
 	System.out.println("100,000 elements: \t\t" + average);
 
+	/*
 	average = 0;
 	for (int x = 0; x < 1000; x++){
 	    long start = System.nanoTime();
@@ -158,6 +161,7 @@ public class MergeSortTester
 	    }
 	average = average / 1000;
 	System.out.println("1,000,000 elements: \t\t" + average);
+	*/
 	
     }//end main
 
